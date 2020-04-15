@@ -19,7 +19,7 @@ Upload built maven JAR to hadoop cluster (in azure):
 ssh sshuser@HW3-Hadoop-Cluster-ssh.azurehdinsight.net
 scp target/wordcountjava-1.0-SNAPSHOT.jar sshuser@HW3-Hadoop-Cluster-ssh.azurehdinsight.net:
 yarn jar wordcountjava-1.0-SNAPSHOT.jar org.apache.hadoop.examples.WordCount /example/data/Miserables.txt /example/data/miserablesout
-hdfs dfs -cat /example/data/wordcountout/*
+hdfs dfs -cat /example/data/90mbout/*
 */
 
 public class WordCount {
